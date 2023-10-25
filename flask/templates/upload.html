@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Splitter</title>
+    <!-- Add Bootstrap CSS (You'll need to provide the correct link to the Bootstrap CSS) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Use Bootstrap container to center the content -->
+    <div class="container">
+        <h1 class="mt-5">Upload a PDF to Split</h1>
+        <form method="POST" action="/split_pdf" enctype="multipart/form-data" class="mt-3">
+            <div class="input-group">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="file" name="file">
+                    <label class="custom-file-label" for="file">Choose a PDF file</label>
+                </div>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Split PDF</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS (You'll need to provide the correct link to the Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

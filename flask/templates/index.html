@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Final Test</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">NIELIT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1-c7zayqrsFXhqAT_yP_zQEpD-pdTFtw971XNn4X8yxY/edit?usp=sharing">Demo  of CSV Files</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="section1" class="container my-5">
+        <h2><a href="/upload">Upload PDF</a></h2>
+        <p>Upload Multipage pdf to split it.</p>
+    </div>
+
+    <div id="section2" class="container my-5">
+        <h2><a href="/rename">Rename pdfs</a></h2>
+        <p>Upload CSV file with Current Name of pdf and New Name.</p>
+    </div>
+
+    <div id="section3" class="container my-5">
+        <h2><a href="/mail">Send Mails</a></h2>
+        <p>Upload CSV with Email id and pdf file name to send to that email.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling animation for anchor links
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                var target = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
